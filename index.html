@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="div-wrapper">
+        <main>
+            <div class="div-left-graphic">
+                <div>
+                    <img src="./images/odin-lined.png">
+                    <p>ODIN</p>
+                </div>
+                <p id="image-credit">Photo by <a href="https://unsplash.com/@joelfilip">Joel Filipe</a> on <a href="https://unsplash.com/photos/multicolored-abstract-painting-QwoNAhbmLLo">Unsplash</a></p>
+            </div>
+            <div class="div-right-form">
+                <div id="div-flavor-text">
+                    <p>
+                        This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Explicabo ratione vitae numquam eum recusandae accusantium, veniam assumenda
+                        voluptates quisquam vel magnam, a ea quaerat atque quia. Architecto, excepturi magni? Amet.
+                    </p>
+                    <p>You <i>know</i> you want to.</p>
+                </div>
+                <div id="div-form-signup">
+                    <p>Sign Up Today!</p>
+                    <form id="form-signup" autocomplete="off">
+                        <label for="lbl-first-name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="lbl-first-name" required>
+                        <label for="lbl-last-name">LAST NAME</label>
+                        <input type="text" name="last_name" id="lbl-last-name" required>
+                        <label for="lbl-email">EMAIL</label>
+                        <input type="email" name="email" id="lbl-email" required>
+                        <label for="lbl-phone-num">PHONE NUMBER</label>
+                        <input type="text" name="phone_number" id="lbl-phone-num" pattern="/(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/g" required>
+                        <label for="lbl-password">PASSWORD</label>
+                        <input type="password" name="password" id="lbl-password" required>
+                        <label for="lbl-password-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="password_confirm" id="lbl-password-confirm" required>
+                    </form>
+                </div>
+                <div id="div-account-create">
+                    <button type="submit" form="form-signup">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+
+.div-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.div-left-graphic,
+.div-right-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-left-graphic {
+    background: center/cover url("./images/login_cover_img.jpg");
+    width: 75%;
+    position: relative;
+}
+
+.div-left-graphic div {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000066;
+    position: absolute;
+    top: 10rem;
+}
+
+.div-left-graphic div p {
+    font: 5em "Orbitron", sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.div-left-graphic div img {
+    height: 8rem;
+}
+
+.div-right-form {
+    flex-direction: column;
+    background-color: whitesmoke;
+    justify-content: center;
+    position: relative;
+}
+
+#div-flavor-text,
+#div-form-signup,
+#div-account-create {
+    padding-left: 3rem;
+    position: relative;
+    bottom: 4rem;
+}
+
+#div-flavor-text {
+    font: 600 1.5em "Roboto", sans-serif;
+    padding-bottom: 2rem;
+    padding-right: 20rem;
+}
+
+#div-form-signup {
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+#div-form-signup p {
+    font: 500 1.5em "Roboto", sans-serif;
+}
+
+#div-account-create {
+    padding-top: 2rem;
+}
+
+#div-account-create p {
+    font: 450 1em "Roboto", sans-serif;
+}
+
+#div-account-create a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #5a2d44;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 12rem;
+}
+
+input {
+    width: 20rem;
+    height: 1.5rem;
+    background-color:#fffcfa;
+    border-color: #E5E7EB;
+    border-radius: 0.3em;
+    border-style: solid;
+    border-width: 0.1em;
+}
+
+label {
+    font: 500 0.8em "Roboto", sans-serif;
+    letter-spacing: 0.1em;
+    margin-top: 1rem;
+    width: 28rem;
+}
+
+button {
+    font: 500 0.9em "Roboto", sans-serif;
+    color: white;
+    padding: 0.7rem 3rem;
+    background-color: #3c202e;
+    border-style: none;
+    border-radius: 0.5em;
+    box-shadow: 3px 3px 5px grey;
+}
+
+button:active {
+    outline-style: inset;
+    outline-color: #3c202e;
+    outline-width: 0.5px;
+    transform: translateZ(-4px);
+}
+
+input[type="password"]:focus:invalid,
+input[id="lbl-phone-num"]:focus:invalid {
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 2px 2px 3px grey;
+}
+
+#image-credit {
+    position: relative;
+    align-self: flex-end;
+    left: 30%;
+    font: 1em "Roboto", sans-serif;
+    color: white;
+}
